@@ -1,7 +1,7 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
-import UserCard from '../../components/user-card'
 import { Toaster } from 'sonner'
+import UsersTable from '../../components/users-table'
 const Home = () => {
   React.useEffect(() => {
     window.scrollTo(0, 0)
@@ -10,7 +10,7 @@ const Home = () => {
   return (
     <section className="my-10">
       <div className="container">
-        <UserCard data={users} />
+        <UsersTable data={users} />
         <Toaster richColors />
       </div>
     </section>
